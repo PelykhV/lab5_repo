@@ -66,32 +66,32 @@ string Clothing::GetTypeStr(int t)
     }
 }
 
-TypeCloth Clothing::getType()
+TypeCloth Clothing::GetType()
 {
     return this->clothType;
 }
 
-string Clothing::getColour()
+string Clothing::GetColour()
 {
     return this->colour;
 }
 
-string Clothing::getDescription()
+string Clothing::GetDescription()
 {
     return this->description;
 }
 
-string Clothing::getLocation()
+string Clothing::GetLocation()
 {
     return this->location;
 }
 
-string Clothing::getName()
+string Clothing::GetName()
 {
     return this->name;
 }
 
-string Clothing::getSize()
+string Clothing::GetSize()
 {
     return this->size;
 }
