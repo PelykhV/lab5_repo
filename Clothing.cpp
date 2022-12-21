@@ -16,17 +16,17 @@ Clothing::Clothing(TypeCloth type, string name, string colour, string size, stri
     this->name = name;
 }
 
-void Clothing::setType(TypeCloth type)
+void Clothing::SetType(TypeCloth type)
 {
     clothType = type;
 }
 
-void Clothing::setColour(string colour)
+void Clothing::SetColour(string colour)
 {
     this->colour = colour;
 }
 
-void Clothing::setDescription(string description)
+void Clothing::SetDescription(string description)
 {
     this->description = description;
 }
@@ -36,12 +36,12 @@ void Clothing::setLocation(string location)
     this->location = location;
 }
 
-void Clothing::setName(string name)
+void Clothing::SetName(string name)
 {
     this->name = name;
 }
 
-void Clothing::setSize(string size)
+void Clothing::SetSize(string size)
 {
     this->size = size;
 }
