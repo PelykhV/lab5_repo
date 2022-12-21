@@ -31,7 +31,7 @@ void Clothing::SetDescription(string description)
     this->description = description;
 }
 
-void Clothing::setLocation(string location)
+void Clothing::SetLocation(string location)
 {
     this->location = location;
 }
