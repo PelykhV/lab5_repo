@@ -63,22 +63,22 @@ void FillArrayClothingsCustom()
 	{
 		cout << i + 1 << " item:" << endl;
 		cout << "Input Type of clothing: ";
-		clothings[i].setType(wardrobe.SetType());
+		clothings[i].SetType(wardrobe.SetType());
 		cout << "Input Name of clothing: ";
 		cin >> name;
-		clothings[i].setName(name);
+		clothings[i].SetName(name);
 		cout << "Input Size of clothing: ";
 		cin >> size;
-		clothings[i].setSize(size);
+		clothings[i].SetSize(size);
 		cout << "Input Description of clothing: ";
 		cin >> desc;
-		clothings[i].setDescription(desc);
+		clothings[i].SetDescription(desc);
 		cout << "Input Located of clothing: ";
 		cin >> locate;
-		clothings[i].setLocation(locate);
+		clothings[i].SetLocation(locate);
 		cout << "Input Color of clothing: ";
 		cin >> color;
-		clothings[i].setColour(color);
+		clothings[i].SetColour(color);
 	}
 	cout << "Success! Array of Clothing was Filled." << endl << endl;
 	system("pause");
@@ -92,33 +92,33 @@ void FillArrayClothingsDefault()
 	TypeCloth type;
 	clothings = new Clothing[length];
 	
-	clothings[0].setName("Panth");
-	clothings[0].setDescription("This is classic panth");
-	clothings[0].setLocation("Lviv");
-	clothings[0].setSize("L");
-	clothings[0].setType(type = PANTH);
-	clothings[0].setColour("Black");
+	clothings[0].SetName("Panth");
+	clothings[0].SetDescription("This is classic panth");
+	clothings[0].SetLocation("Lviv");
+	clothings[0].SetSize("L");
+	clothings[0].SetType(type = PANTH);
+	clothings[0].SetColour("Black");
 
-	clothings[1].setName("Shirt");
-	clothings[1].setDescription("This is lassic shirt");
-	clothings[1].setLocation("Lviv");
-	clothings[1].setSize("L");
-	clothings[1].setType(type = SHIRT);
-	clothings[1].setColour("White");
+	clothings[1].SetName("Shirt");
+	clothings[1].SetDescription("This is lassic shirt");
+	clothings[1].SetLocation("Lviv");
+	clothings[1].SetSize("L");
+	clothings[1].SetType(type = SHIRT);
+	clothings[1].SetColour("White");
 
-	clothings[2].setName("Jacket");
-	clothings[2].setDescription("This is sport jacket");
-	clothings[2].setLocation("Lviv");
-	clothings[2].setSize("M");
-	clothings[2].setType(type = JACKET);
-	clothings[2].setColour("Red");
+	clothings[2].SetName("Jacket");
+	clothings[2].SetDescription("This is sport jacket");
+	clothings[2].SetLocation("Lviv");
+	clothings[2].SetSize("M");
+	clothings[2].SetType(type = JACKET);
+	clothings[2].SetColour("Red");
 
-	clothings[3].setName("Sneakers");
-	clothings[3].setDescription("This is sneakers for training");
-	clothings[3].setLocation("Lviv");
-	clothings[3].setSize("42");
-	clothings[3].setType(type = SHOOES);
-	clothings[3].setColour("Blue");
+	clothings[3].SetName("Sneakers");
+	clothings[3].SetDescription("This is sneakers for training");
+	clothings[3].SetLocation("Lviv");
+	clothings[3].SetSize("42");
+	clothings[3].SetType(type = SHOOES);
+	clothings[3].SetColour("Blue");
 	cout << "Success! Array of Clothing was Filled." << endl << endl;
 	system("pause");
 }
@@ -126,7 +126,7 @@ void FillArrayClothingsDefault()
 void CallGoOut()
 {
 	system("cls");
-	int typeQty = wardrobe.goOut(clothings);
+	int typeQty = wardrobe.GoOut(clothings);
 	if (typeQty > 3)
 	{
 		cout << "The person can go outside!!!" << "\nNumber Type of Clothings is: " << typeQty << endl << endl;
