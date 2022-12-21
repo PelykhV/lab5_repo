@@ -17,7 +17,7 @@ Wardrobe::Wardrobe(int size)
 	else this->clothings = new Clothing[0];
 }
 
-int Wardrobe::goOut(Clothing* cs)
+int Wardrobe::GoOut(Clothing* cs)
 {
 	int t1=0, t2=0, t3=0, t4=0, t5=0, all = 0;
 	if (sizeItem != 0)
