@@ -4,7 +4,7 @@
 using namespace std;
 
 int length;
-Wardrobe w;
+Wardrobe wardrobe;
 Clothing* clothings;
 
 int Menu();
@@ -57,13 +57,13 @@ void FillArrayClothingsCustom()
 	string name, color, desc, locate, size;
 	cout << "Input clothings size: ";
 	cin >> length;
-	w = Wardrobe(length);
+	wardrobe = Wardrobe(length);
 	clothings = new Clothing[length];
 	for (int i = 0; i < length; i++)
 	{
 		cout << i + 1 << " item:" << endl;
 		cout << "Input Type of clothing: ";
-		clothings[i].setType(w.SetType());
+		clothings[i].setType(wardrobe.SetType());
 		cout << "Input Name of clothing: ";
 		cin >> name;
 		clothings[i].setName(name);
@@ -88,7 +88,7 @@ void FillArrayClothingsDefault()
 {
 	system("cls");
 	length = 4;
-	w = Wardrobe(length);
+	wardrobe = Wardrobe(length);
 	TypeCloth type;
 	clothings = new Clothing[length];
 	
@@ -126,7 +126,7 @@ void FillArrayClothingsDefault()
 void CallGoOut()
 {
 	system("cls");
-	int typeQty = w.goOut(clothings);
+	int typeQty = wardrobe.goOut(clothings);
 	if (typeQty > 3)
 	{
 		cout << "The person can go outside!!!" << "\nNumber Type of Clothings is: " << typeQty << endl << endl;
