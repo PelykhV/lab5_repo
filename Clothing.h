@@ -28,19 +28,19 @@ public:
 	Clothing();
 	Clothing(TypeCloth, string, string, string, string, string);
 	
-	void setType(TypeCloth);
-	void setName(string);
-	void setDescription(string);
-	void setLocation(string);
-	void setColour(string);
-	void setSize(string);
+	void SetType(TypeCloth);
+	void SetName(string);
+	void SetDescription(string);
+	void SetLocation(string);
+	void SetColour(string);
+	void SetSize(string);
 
-	TypeCloth getType();
-	string getName();
-	string getDescription();
-	string getLocation();
-	string getColour();
-	string getSize();
+	TypeCloth GetType();
+	string GetName();
+	string GetDescription();
+	string GetLocation();
+	string GetColour();
+	string GetSize();
 
 	string GetTypeStr(int);
 
