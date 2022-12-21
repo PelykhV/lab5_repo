@@ -15,7 +15,7 @@ public:
 	Wardrobe();
 	Wardrobe(int);
 	
-	int goOut(Clothing*);
+	int GoOut(Clothing*);
 	TypeCloth SetType();
 
 	~Wardrobe();
