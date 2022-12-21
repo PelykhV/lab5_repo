@@ -19,22 +19,22 @@ Wardrobe::Wardrobe(int size)
 
 int Wardrobe::GoOut(Clothing* cs)
 {
-	int t1=0, t2=0, t3=0, t4=0, t5=0, all = 0;
+	int type1=0, type2=0, type3=0, type4=0, type5=0, all = 0;
 	if (sizeItem != 0)
 	{
 		for (int i = 0; i < sizeItem; i++)
 		{
 			switch ((int)cs[i].getType())
 			{
-			case 1:t1++; if (t1 > 1)t1 = 1; break;
-			case 2:t2++; if (t2 > 1)t2 = 1; break;
-			case 3:t3++; if (t3 > 1)t3 = 1; break;
-			case 4:t4++; if (t4 > 1)t4 = 1; break;
-			case 5:t5++; if (t5 > 1)t5 = 1; break;
+			case 1:type1++; if (type1 > 1)type1 = 1; break;
+			case 2:type2++; if (type2 > 1)type2 = 1; break;
+			case 3:type3++; if (type3 > 1)type3 = 1; break;
+			case 4:type4++; if (type4 > 1)type4 = 1; break;
+			case 5:type5++; if (type5 > 1)type5 = 1; break;
 			default:break;
 			}
 		}
-		all = t1 + t2 + t3 + t4 + t5;
+		all = type1 + type2 + type3 + type4 + type5;
 		return all;
 	}
 	else return 0;
